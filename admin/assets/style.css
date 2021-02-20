@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(235, 235, 235);
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header {
+    background: #22252d;
+    height: 120px;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    box-shadow: 2px 0 2px #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 80px;
+}
+
+.header-flex a,
+.header-logout a {
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #22252d;
+    border-radius: 2px;
+    transition: all ease 0.2s;
+    margin-right: 10px;
+}
+.header-flex a:last-child {
+    margin-right: 0;
+}
+.header-flex a:hover,
+.header-logout a:hover {
+    color: #fff;
+    background-color: #22252d;
+}
+.header-nav {
+    display: flex;
+    width: 80%;
+}
+.header-logout {
+    width: 20%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+footer {
+    background: #22252d;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+.footer-flex {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    justify-content: center;
+}
+.copyright {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+table {
+    width: 100%;
+}
+tr {
+    width: 100%;
+}
+td div {
+    max-height: 200px;
+    overflow-y: auto;
+    max-width: 100px;
+    font-size: 12px;
+    word-wrap: break-word;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+}
+td div.text {
+    max-width: 100%;
+}
+
+.succsess {
+    color: green;
+    padding: 0 15px;
+    font-weight: 700;
+}
+.error {
+    color: red;
+    padding: 0 15px;
+    font-weight: 700;
+}
+
+form {
+    width: 100%;
+    padding: 15px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+}
+textarea {
+    width: 100%;
+    height: 400px;
+    overflow-y: auto;
+    resize: none;
+}
+a {
+    color: rgb(1, 95, 202);
+}

@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(235, 235, 235);
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+header {
+    background: #22252d;
+    height: 120px;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    box-shadow: 2px 0 2px #333;
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container.sm {
+    max-width: 800px;
+}
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 80px;
+}
+.header-logo {
+    align-self: flex-end;
+}
+.header-logo img {
+    height: 60px;
+}
+.header-link a {
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #22252d;
+    border-radius: 2px;
+    transition: all ease 0.2s;
+}
+.header-link a:hover {
+    color: #fff;
+    background-color: #22252d;
+}
+footer {
+    background: #22252d;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding: 10px 0;
+}
+.footer-flex {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    justify-content: center;
+}
+.copyright {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.items {
+    padding-top: 30px;
+}
+.items-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    width: 33.3333%;
+    padding: 0 15px 20px;
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+.item:hover .item-title {
+    color: orange;
+}
+.item-photo {
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-photo img {
+    object-fit: cover;
+    min-width: 100%;
+    height: 200px;
+}
+.item-category {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-size: 12px;
+    padding: 5px;
+    background-color: orange;
+    color: #fff;
+}
+.item-date {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 12px;
+    padding: 5px;
+    background-color: orange;
+    color: #fff;
+}
+.item-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: all ease 0.2s;
+}
+.item-subtitle {
+    font-size: 14px;
+}
+.pagination {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+    height: 60px;
+    align-items: flex-start;
+}
+.pagination li {
+    margin: 0 5px;
+    background-color: orange;
+    box-shadow: 2px 2px 2px #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination li.active {
+    background: #22252d;
+}
+.pagination li.disabled {
+    background-color: rgba(255, 166, 0, 0.6);
+}
+.pagination li.disabled a {
+    cursor: no-drop;
+}
+.pagination li a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.article {
+    padding-bottom: 30px;
+}
+.board {
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    overflow: hidden;
+}
+.board-text {
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 800px;
+}
+.board::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.board img {
+    min-width: 100%;
+    height: auto;
+}
+.accent {
+    background-color: rgba(143, 238, 245, 0.6);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+}
+ul.accent {
+    padding-left: 40px;
+}
+.accent div {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.cen {
+    display: flex;
+    margin: 0 auto;
+    padding: 15px;
+}
+form.select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+form.select select {
+    margin: 0 5px;
+    border: 1px solid #333;
+    color: #333;
+}
+form.select select:hover {
+    color: #000;
+}
+form.select input {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+form.select input:hover {
+    color: #000;
+}
